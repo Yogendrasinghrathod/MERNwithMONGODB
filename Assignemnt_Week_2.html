@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        p {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .styled-button {
+            padding: 10px 20px;
+            border: 2px solid black;
+            background-color: lightgray;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .styled-button:hover {
+            background-color: gray;
+            color: white;
+        }
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        form {
+            margin: 20px auto;
+            width: 300px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Main Heading</h1>
+    <p>This is the first paragraph. It provides some information about the topic.</p>
+    <p>This is the second paragraph. It gives additional insights and details.</p>
+    
+    <div class="image-container">
+        <img src="https://via.placeholder.com/400" alt="Placeholder Image">
+        <p>Image Caption</p>
+    </div>
+    
+    <button class="styled-button">Click Me</button>
+    
+    <table>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+        </tr>
+    </table>
+    
+    <form>
+        <input type="text" placeholder="Enter Name">
+        <input type="email" placeholder="Enter Email">
+        <button type="submit" class="styled-button">Submit</button>
+    </form>
+
+    <script>
+        let age = 25;
+        let isAdult = age >= 18;
+        
+        let x = 10, y = 5;
+        let addition = x + y;
+        let multiplication = x * y;
+        let modulus = x % y;
+        
+        let n = 7;
+        let isEven = n % 2 === 0 ? "Even" : "Odd";
+        
+        let numbers = [];
+        for (let i = 1; i <= 5; i++) {
+            numbers.push(i);
+        }
+        
+        function square(num) {
+            return num * num;
+        }
+    </script>
+</body>
+</html>
